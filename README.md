@@ -1,8 +1,6 @@
 # SecureBrowseFX
 
-# PrivacyGuardFX
-
-PrivacyGuardFX é uma extensão para o navegador Firefox desenvolvida para detectar e alertar os usuários sobre potenciais ataques e violações de privacidade durante a navegação na web. Esta extensão busca oferecer uma camada adicional de segurança ao identificar conexões a domínios de terceira parte, cookies injetados, armazenamento local, e mais.
+SecureBrowseFX é uma extensão para o navegador Firefox desenvolvida para detectar e alertar os usuários sobre potenciais ataques e violações de privacidade durante a navegação na web. Esta extensão busca oferecer uma camada adicional de segurança ao identificar conexões a domínios de terceira parte, cookies injetados, armazenamento local, e mais.
 
 ## Características
 
@@ -13,7 +11,7 @@ PrivacyGuardFX é uma extensão para o navegador Firefox desenvolvida para detec
 
 ## Pré-requisitos
 
-Para instalar e rodar a extensão PrivacyGuardFX, você precisará ter o Firefox instalado no seu dispositivo. A extensão é compatível com as últimas versões do Firefox.
+Para instalar e rodar a extensão SecureBrowseFX, você precisará ter o Firefox instalado no seu dispositivo. A extensão é compatível com as últimas versões do Firefox.
 
 ## Instalação
 
