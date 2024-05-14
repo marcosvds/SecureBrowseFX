@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SecureBrowseFX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Courier New', monospace; /* Alterado para Courier New */
+      margin: 20px;
+      background: #000000; /* Fundo preto */
+      color: #33ff33; /* Cor de texto verde neon */
+    }
+
+    h3 {
+      color: #33ff33; /* Verde neon para títulos */
+      font-family: 'Raleway', sans-serif; /* Mantido Raleway para títulos */
+      font-weight: 700; /* Usando um peso mais ousado para os títulos */
+    }
+
+    .result, .cookie-count {
+      margin: 10px 0;
+      padding: 10px;
+      background: #202020; /* Fundo escuro para os containers */
+      border: 1px solid #555555; /* Borda cinza claro para contraste */
+      border-radius: 5px;
+      font-family: 'Courier New', monospace; /* Aplicando Courier New aqui também */
+      color: #33ff33; /* Cor de texto verde neon */
+    }
+
+    #results {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    button {
+      margin: 10px 0;
+      padding: 8px 16px;
+      background-color: #33ff33; /* Cor verde */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+    }
+
+    button:hover {
+      background-color: #b38300; /* Tonalidade mais escura para o hover */
+    }
+
+    .button-container {
+      text-align: right; /* Alinha o botão à direita */
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-family: 'Courier New', monospace; /* Courier New para listas */
+    }
+
+    ul li {
+      padding: 8px;
+      background: #202020; /* Fundo escuro para os itens da lista */
+      border-bottom: 1px solid #555555; /* Borda cinza claro */
+      color: #33ff33; /* Cor de texto verde neon */
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Armazenamento Local</h3>
+  <div id="results">
+    <div id="localStorage" class="result">Armazenamento Local: 0</div>
+    <div id="sessionStorage" class="result">Armazenamento de Sessão: 0</div>
+  </div>
+  <script src="src/storage.js"></script>
+
+  <h3>Contagem de Cookies</h3>
+  <div>Total de cookies: <span id="totalCookies">0</span></div>
+  <div class="container">
+    <div class="column">
+      <div class="cookie-count">Cookies de Primeira Parte: <span id="firstPartyCookies">0</span></div>
+      <div class="cookie-count">Cookies de Terceira Parte: <span id="thirdPartyCookies">0</span></div>
+      <div class="cookie-count">Cookies de Sessão: <span id="sessionCookies">0</span></div>
+      <div class="cookie-count">Cookies Persistentes: <span id="persistentCookies">0</span></div>
+    </div>
+  </div>
+  <script src="src/cookies.js"></script>
+
+  <h3>Deteção de Sequestro</h3>
+  <div id="possibleHijacking" class="result">Carregando...</div>
+  <script src="src/ports.js"></script>
+
+  <h3>Deteção de Fingerprinting de Canvas</h3>
+  <div id="status" class="result">Verificando...</div>
+  <script src="src/canvas.js"></script>
+
+  <h3>Pontos em Segurança</h3>
+  <div id="secScore" class="result"></div>
+  <div class="button-container">
+    <button id="calculateScore">Verifique o Score</button>
+  </div>
+  <script src="src/score.js"></script>
+
+</body>
+</html>

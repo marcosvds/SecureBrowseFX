@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "SecureBrowseFX",
+  "version": "1.0",
+  "description": "SecureBrowseFX é uma extensão multiplataforma que aprimora a segurança e privacidade do usuário ao navegar na internet. A extensão detecta e alerta sobre tentativas de fingerprinting de Canvas, uso de cookies, armazenamento de dados locais e solicitações de terceiros, proporcionando uma navegação mais segura e privada.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+      "scripts": ["background.js"]
+  },
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "activeTab",
+      "storage",
+      "tabs",
+      "cookies",
+      "<all_urls>"
+  ]
+}
