@@ -19,7 +19,7 @@ SecureBrowseFX é compatível com os principais navegadores modernos, incluindo 
 
 Para instalar a extensão localmente:
 
-1. Clone este repositório em sua máquina local usando `git clone [URL do repositório]`.
+1. Clone este repositório em sua máquina local usando `git clone [[URL do repositório]](https://github.com/marcosvds/SecureBrowseFX.git)`.
 2. Para **Firefox**:
    - Abra o Firefox e acesse `about:debugging`.
    - Clique em "Este Firefox" e depois em "Carregar extensão temporária".
