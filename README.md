@@ -11,6 +11,23 @@ SecureBrowseFX é uma extensão multiplataforma desenvolvida para detectar e ale
 - [x] **Detecção de Canvas Fingerprint (1 ponto)**: Monitora o uso de técnicas de fingerprinting de Canvas.
 - [x] **Pontuação de Privacidade (2 pontos)**: Cria uma pontuação baseada em uma metodologia própria, indicando o nível de respeito à privacidade do usuário por parte da página.
 
+## Metodologia de Pontuação
+
+A pontuação de segurança da SecureBrowseFX é calculada com base em vários fatores de risco detectados durante a navegação:
+
+- **Conexões a Domínios de Terceiros**: -25 pontos se detectados.
+- **Ameaças de Sequestro de Navegador**: -25 pontos se detectadas.
+- **Uso de Cookies de Terceiros**: -25 pontos se detectados.
+- **Detecção de Sequestro Potencial**: -25 pontos se detectado.
+
+A pontuação inicial é de 100, e cada tipo de risco detectado reduz essa pontuação. A pontuação final (mínima de 0) indica o nível de respeito à privacidade da página. Uma pontuação alta sugere uma navegação mais segura e privada, enquanto uma pontuação baixa indica potenciais riscos de privacidade.
+
+### Exemplo de Pontuação
+
+- **100/100**: Nenhuma ameaça detectada.
+- **75/100**: AmEAças moderadas detectadas.
+- **50/100 ou menos**: Alto risco de comprometimento da privacidade.
+
 ## Compatibilidade
 
 SecureBrowseFX é compatível com os principais navegadores modernos, incluindo Firefox e Chrome. Garanta que você esteja utilizando a última versão do navegador escolhido para uma experiência otimizada.
