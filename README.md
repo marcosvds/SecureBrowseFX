@@ -25,8 +25,9 @@ A pontuação inicial é de 100, e cada tipo de risco detectado reduz essa pontu
 ### Exemplo de Pontuação
 
 - **100/100**: Nenhuma ameaça detectada.
-- **75/100**: AmEAças moderadas detectadas.
-- **50/100 ou menos**: Alto risco de comprometimento da privacidade.
+- **75/100**: Ameaças moderadas detectadas.
+- **50/100**: Risco de comprometimento da privacidade.
+- **25/100**: Alto risco de comprometimento da privacidade.
 
 ## Compatibilidade
 
